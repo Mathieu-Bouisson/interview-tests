@@ -22,7 +22,7 @@ After the upload:
 
 Web service
 
-- An external web service should access over an HTTP route to the list of candidates
+- An external web service should provide access to the list of candidates over an HTTP route
 
 ## Expected features
 
@@ -56,7 +56,7 @@ The most important aspect is to give us your analysis of the problematic. We pre
 We should be able to run your application by typing:
 
 ```
-$ npm i
+$ npm install
 $ npm run build
 $ npm start
 ```
@@ -67,7 +67,7 @@ $ npm start
 
 For all cases, make a short description of your choices and instructions at the end of this README.
 
-**Feel free to contact me if you have questions about those instructions.
+**Feel free to contact us if you have questions about those instructions.
 Good luck!**
 
 ---
