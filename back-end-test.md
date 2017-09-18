@@ -52,6 +52,10 @@ This is a non-exaustive list of the aspects that can be evaluated on your code:
 
 The most important aspect is to give us your analysis of the problematic. We prefer you don't cover all the features but provide some of its that work perfectly.
 
+## Resources
+
+- [Video sample](https://s3.amazonaws.com/chance-athena-dev/back-end-test.mp4)
+
 ## Delivery
 We should be able to run your application by typing:
 
