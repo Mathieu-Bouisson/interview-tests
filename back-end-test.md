@@ -1,4 +1,4 @@
-# Tech interview for [XXX]
+# Tech interview
 Tech project for the back-end interview process.
 
 ## Context
@@ -56,6 +56,16 @@ The most important aspect is to give us your analysis of the problematic. We pre
 
 - [Video sample](https://s3.amazonaws.com/chance-athena-dev/back-end-test.mp4)
 
+## Usage
+
+* Start a new git repository (Please do not fork this one)
+* Commit as often as possible, and try to be explicit in your
+    commit descriptions
+* Add a small description of your solution in the README.md of your repository
+* Run ``` git bundle create YOURNAME.bundle HEAD```
+* Send your bundle file via email to tech-interview@chance.co
+
+
 ## Delivery
 We should be able to run your application by typing:
 
@@ -69,9 +79,10 @@ $ npm start
 
 **NB 2:** As you can guess here, your code should be executable by Node after a build. We consider Node 6.10 as the standard distribution for this test.
 
-For all cases, make a short description of your choices and instructions at the end of this README.
-
 **Feel free to contact us if you have questions about those instructions.
 Good luck!**
 
+
 ---
+
+
