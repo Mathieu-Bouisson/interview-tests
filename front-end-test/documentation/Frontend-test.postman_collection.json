@@ -1,0 +1,251 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Frontend-test",
+		"_postman_id": "c29caddf-93a4-6e73-4eba-331b2b771cb8",
+		"description": "Mock API for testing purpose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "{{host}}/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"nicolas@chance.co\",\n\t\"password\": \"chance\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"url": "{{host}}/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Murilo\",\n\t\"lastName\": \"ANDRADE\",\n\t\"email\": \"murilo@chance.co\",\n\t\"password\": \"chance\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"url": "{{host}}/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Seed title\",\n  \"description\": \"Seed description\",\n  \"status\": \"Seed status\",\n  \"userId\": \"Mock_id\",\n  \"categoryId\": \"Mock_id\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all reports",
+			"request": {
+				"url": "{{host}}/report",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Seed title\",\n  \"description\": \"Seed description\",\n  \"status\": \"Seed status\",\n  \"userId\": \"Mock_id\",\n  \"categoryId\": \"Mock_id\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create report",
+			"request": {
+				"url": "{{host}}/report",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Seed title\",\n  \"description\": \"Seed description\",\n  \"status\": \"Seed status\",\n  \"userId\": \"Mock_id\",\n  \"categoryId\": \"Mock_id\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update report",
+			"request": {
+				"url": "{{host}}/report",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"H12MOUpn-\",\n  \"title\": \"Seed updated title\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete report",
+			"request": {
+				"url": "{{host}}/report/HkpTlPT3b",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all comments",
+			"request": {
+				"url": "{{host}}/comment",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Seed title\",\n  \"description\": \"Seed description\",\n  \"status\": \"Seed status\",\n  \"userId\": \"Mock_id\",\n  \"categoryId\": \"Mock_id\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all comments by reportId",
+			"request": {
+				"url": "{{host}}/report/{{mockId}}/comment",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Seed title\",\n  \"description\": \"Seed description\",\n  \"status\": \"Seed status\",\n  \"userId\": \"Mock_id\",\n  \"categoryId\": \"Mock_id\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create comment",
+			"request": {
+				"url": "{{host}}/comment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"content\": \"Seed content\",\n  \"userId\": \"Mock_id\",\n  \"reportId\": \"Mock_id\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

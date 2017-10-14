@@ -1,0 +1,14 @@
+# MacOS
+*.DS_Store
+
+# JetBrains
+.idea
+
+# Node
+node_modules
+
+# Yarn lock (only for recruitment test)
+yarn.lock
+
+# DB file
+*db.json
